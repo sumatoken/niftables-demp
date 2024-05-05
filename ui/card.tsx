@@ -15,7 +15,7 @@ export default function Card({ title, subTitle, description, imageSrc, className
     return (
         <div className={cn("relative w-full md:w-[453px] min-h-[659px] flex flex-col items-start gap-[30px] rounded-md bg-gray-line/60", className)}>
             <Badge className='absolute  right-[30px] -top-[10px] h-[19px] bg-white text-black px-[6px] py-[3px]' title='coming soon' />
-            <div className="w-full md:w-[410.5px] flex flex-col gap-[9px] px-[30px] pt-[30px]">
+            <div className="w-full md:w-[410.5px] min-h-[149px] flex flex-col gap-[9px] px-[30px] pt-[30px]">
                 <Text font='MonumentExtendedRegular' className='w-full h-11 leading-[120%] uppercase text-[38px]'>
                     {title}
                 </Text>

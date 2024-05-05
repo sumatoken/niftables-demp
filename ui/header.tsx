@@ -114,31 +114,43 @@ const MobileMenu = () => {
 }
 
 export default function Header() {
+    const [isTop, setIsTop] = useState(true);
+
+    useEffect(() => {
+        const checkScroll = () => {
+            setIsTop(window.scrollY < 50);
+        };
+
+        window.addEventListener('scroll', checkScroll);
+        return () => {
+            window.removeEventListener('scroll', checkScroll);
+        };
+    }, []);
+
     return (
-        <>
-            <header className="absolute top-0 z-50 w-full">
-                <nav className='hidden md:flex md:fixed md:top-0 w-full items-center justify-between px-[50px] py-[30px] backdrop-blur bg-gradient-to-t from-transparent to-purple/20'>
-                    <Link href='#'>
-                        <Logo />
-                    </Link>
-                    <div className="flex items center gap-[40px]">
-                        <div className="flex items-center gap-[40px]">
-                            {items.map((item) => (
-                                <div key={item.title} className="flex items-center gap-1">
-                                    <Link href={item.href} aria-disabled>
-                                        <Text font="SatoshiBold" className={cn("w-auto text-[18px] leading-[110%] align-top transition-all ease-in-out duration-300", !item.comingSoon ? 'hover:text-blue' : '')}>
-                                            {item.title}
-                                        </Text>
-                                    </Link>
-                                    {item.comingSoon && <Badge title='soon' className='self-start bg-black text-purple' />}
-                                </div>
-                            ))}
-                        </div>
-                        <Button variant='outline'>Connect</Button>
+        <header className="absolute top-0 z-50 w-full">
+            <nav className={cn('hidden md:flex md:fixed md:top-0 w-full items-center justify-between px-[50px] py-[30px]', isTop ? '' : 'backdrop-blur bg-gradient-to-t from-transparent to-purple/20')}>
+                <Link href='#'>
+                    <Logo />
+                </Link>
+                <div className="flex items center gap-[40px]">
+                    <div className="flex items-center gap-[40px]">
+                        {items.map((item) => (
+                            <div key={item.title} className="flex items-center gap-1">
+                                <Link href={item.href} aria-disabled>
+                                    <Text font="SatoshiBold" className={cn("w-auto text-[18px] leading-[110%] align-top transition-all ease-in-out duration-300", !item.comingSoon ? 'hover:text-blue' : '')}>
+                                        {item.title}
+                                    </Text>
+                                </Link>
+                                {item.comingSoon && <Badge title='soon' className='self-start bg-black text-purple' />}
+                            </div>
+                        ))}
                     </div>
-                </nav>
-                <MobileMenu />
-            </header>
-        </>
+                    <Button variant='outline'>Connect</Button>
+                </div>
+            </nav>
+            <MobileMenu />
+        </header>
+
     )
 }

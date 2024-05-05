@@ -2,7 +2,6 @@ import Button from '@ui/button'
 import Separator from '@ui/separator'
 import Text from '@ui/text'
 import Video from '@ui/video'
-import Image from 'next/image'
 import React from 'react'
 
 const Ellipse = ({ className }: { className: string }) => {
