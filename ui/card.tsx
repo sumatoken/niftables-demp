@@ -24,12 +24,12 @@ export default function Card({ title, subTitle, description, imageSrc, className
                 </Text>
             </div>
             <div className="w-full flex flex-col gap-[33px]">
-                <div className="w-full md:w-[423px] h-[234px] pr-[30px] group">
-                    <div className="relative md:w-[423px] h-[234px] rounded-tr-lg rounded-bl-lg overflow-hidden">
-                        <div className="absolute z-10 top-0 left-0 w-full h-full rounded-tr-lg rounded-bl-lg mix-blend-color bg-gradient-to-t from-[#3D6FFF] from-0%  to-[#9123FF] to-100%">
+                <div className="w-full md:w-[423px] h-[234px] pr-0 md:pr-[30px] group">
+                    <div className="relative w-full md:w-[423px] h-[234px] rounded-tr-lg rounded-br-lg overflow-hidden">
+                        <div className="absolute z-10 top-0 left-0 w-full h-full rounded-tr-lg rounded-br-lg mix-blend-color bg-gradient-to-t from-[#3D6FFF] from-0%  to-[#9123FF] to-100%">
                         </div>
                         <Image src={imageSrc} alt={title} fill
-                            className=' transform rounded-tr-lg rounded-bl-lg overflow-hidden mix-blend-normal group-hover:scale-110 transition-all duration-300 ease-out' />
+                            className=' transform rounded-tr-lg rounded-br-lg overflow-hidden mix-blend-normal group-hover:scale-110 transition-all duration-300 ease-out' />
                     </div>
                 </div>
                 <Text font='SatoshiRegular' className='text-[18px] px-[30.8px] text-lg'>
