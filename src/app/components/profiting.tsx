@@ -1,5 +1,6 @@
 import Separator from '@ui/separator'
 import Text from '@ui/text'
+import Video from '@ui/video'
 import Image from 'next/image'
 import React from 'react'
 
@@ -19,10 +20,7 @@ export default function Profiting() {
             <div className="flex items-center justify-center w-fit lg:w-[1440px] h-full lg:h-[485px] md:gap-[71px] lg:px-10 xl:px-20 2xl:px-0">
                 <div className="hidden md:flex w-fit lg:w-[500px] xl:w-[947px] min-h-full">
                     <div className="relative min-w-full min-h-full">
-                        <video autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md'>
-                            <source src='/videos/creon-logo.mp4' type='video/mp4' />
-                            Your browser does not support the video tag.
-                        </video>
+                        <Video fileName='creon-logo-DqCd7WSN7lbE0dCBok6y7HcLDaaMay' autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md' />
                         <div className="min-w-full min-h-screen absolute top-0 z-10 bg-gradient-to-t from-black from-0% via-blue via-50% to-purple to-100% mix-blend-soft-light"></div>
                     </div>
                 </div>

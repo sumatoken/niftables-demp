@@ -1,4 +1,5 @@
 import HorizontalCard from '@ui/horizontal-card'
+import Video from '@ui/video'
 import Image from 'next/image'
 import React from 'react'
 
@@ -25,10 +26,7 @@ const items = [
 const Background = () => {
     return (
         <div className="-z-50 absolute top-0 min-w-[100vw] left-1/2 transform -translate-x-1/2 w-full h-full">
-            <video autoPlay playsInline loop muted className='absolute top-0 left-0 w-full h-full object-cover'>
-                <source src='/videos/roadmap-video.mp4' type='video/mp4' />
-                Your browser does not support the video tag.
-            </video>
+            <Video fileName='roadmap-video-AcqbnQs1OMXtda0IxYHy3Z2AxcuKpn' autoPlay playsInline loop muted className='absolute top-0 left-0 w-full h-full object-cover' />
             <div className="absolute top-0 left-0 min-w-[100vw] h-full bg-gradient-to-t from-blue from-0% to-purple to-100% mix-blend-soft-light">
             </div>
             <div className="absolute top-0 left-0 min-w-[100vw] h-full bg-gradient-to-t from-black/0 from-0% to-black/100 to-100%">

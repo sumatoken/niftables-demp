@@ -1,6 +1,7 @@
 import Button from '@ui/button'
 import Separator from '@ui/separator'
 import Text from '@ui/text'
+import Video from '@ui/video'
 import Image from 'next/image'
 import React from 'react'
 
@@ -103,10 +104,7 @@ export default function CreonPass() {
                 </div>
             </div>
             <div className="hidden lg:block relative size-[808px] items-center justify-center">
-                <video autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md'>
-                    <source src='/videos/nft-video.mp4' type='video/mp4' />
-                    Your browser does not support the video tag.
-                </video>
+                <Video fileName='nft-video-mQvVrZPzmeS5MnLrOI2IYmtUp6jbQg' autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md' />
                 <div className="min-w-full md:min-h-screen absolute top-0 z-10 bg-gradient-to-t from-blue/[44%] from-0% to-purple to-100% mix-blend-soft-light"></div>
                 <Ellipse className="z-10 absolute top-0 w-full aspect-[1/2]" />
             </div>
