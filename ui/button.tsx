@@ -21,7 +21,7 @@ export default function Button({ variant = 'default', className, children, ...pr
         const { iconId } = props as { variant: 'icon'; iconId: keyof typeof icons };
         return (
             <button {...props} className={cn(variants[variant], className)}>
-                <Icon id={iconId} width={12} height={6} />
+                <Icon role='icon' id={iconId} width={12} height={6} />
             </button>
         );
     } else if (variant === 'children') {

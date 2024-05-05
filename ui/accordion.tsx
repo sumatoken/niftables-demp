@@ -1,7 +1,7 @@
 'use client'
 
 import React, { useState } from 'react'
-import Icon, { icons } from './icon'
+import Icon, { icons } from '@ui/icon'
 import { cn } from '@shared/utils/cn'
 import Button from './button'
 import Text from './text'
@@ -41,7 +41,7 @@ export default function Accordion({ title, description, iconId }: Props) {
                             <Text font='SatoshiBold' className="transition-colors duration-300 ease-in-out group-hover:text-blue">{title}
                             </Text>
                         </div>
-                        <Icon id='vector' className={cn("duration-300 ease-in-out group-hover:text-blue transform transition-transform", open ? "-scale-y-100" : "scale-y-100")} />
+                        <Icon id='vector' role='open-accordion' className={cn("duration-300 ease-in-out group-hover:text-blue transform transition-transform", open ? "-scale-y-100" : "scale-y-100")} />
                     </div>
                 </div>
                 {/** the animated div */}

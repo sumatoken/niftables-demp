@@ -15,17 +15,17 @@ export default function Footer() {
                     <Link href='#' className="relative group">
                         <Icon id='eclipse' className='fill-black group-hover:fill-blue group-hover:text-blue transition-all ease-in duration-300'>
                         </Icon>
-                        <Icon id='mail' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-whte' />
+                        <Icon id='mail' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ' />
                     </Link>
                     <Link href='#' className="relative group">
                         <Icon id='eclipse' className='fill-black group-hover:fill-blue group-hover:text-blue transition-all ease-in duration-300'>
                         </Icon>
-                        <Icon id='discord' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-whte' />
+                        <Icon id='discord' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ' />
                     </Link>
                     <Link href='#' className="relative group">
                         <Icon id='eclipse' className='fill-black group-hover:fill-blue group-hover:text-blue transition-all ease-in duration-300'>
                         </Icon>
-                        <Icon id='twitter' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 text-whte' />
+                        <Icon id='twitter' className='absolute z-10 top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2 ' />
                     </Link>
                 </div>
             </div>
