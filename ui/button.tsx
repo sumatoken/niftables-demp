@@ -47,8 +47,6 @@ export default function Button({ variant = 'default', className, children, ...pr
         )
     }
 
-
-
     return (
         <button className={cn(variants[variant], className)} {...props}>
             {children}

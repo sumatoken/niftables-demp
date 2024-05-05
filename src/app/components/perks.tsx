@@ -1,6 +1,5 @@
 import HorizontalCard from '@ui/horizontal-card'
 import Video from '@ui/video'
-import Image from 'next/image'
 import React from 'react'
 
 const items = [

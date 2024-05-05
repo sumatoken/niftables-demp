@@ -4,6 +4,8 @@ import Text from '@ui/text'
 import Video from '@ui/video'
 import React from 'react'
 
+const VIDEO_ID = 'nft-video-mQvVrZPzmeS5MnLrOI2IYmtUp6jbQg'
+
 const Ellipse = ({ className }: { className: string }) => {
     return (<svg className={className} fill="none" xmlns="http://www.w3.org/2000/svg">
         <g filter="url(#filter0_f_23_2)">
@@ -19,23 +21,23 @@ const Ellipse = ({ className }: { className: string }) => {
             <ellipse cx="-2.40061e-06" cy="404" rx="404" ry="85" transform="rotate(-90 -2.40061e-06 404)" fill="black" />
         </g>
         <defs>
-            <filter id="filter0_f_23_2" x="-300" y="681" width="1408" height="254" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter0_f_23_2" x="-300" y="681" width="1408" height="254" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_23_2" />
             </filter>
-            <filter id="filter1_f_23_2" x="-300" y="-114" width="1408" height="228" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter1_f_23_2" x="-300" y="-114" width="1408" height="228" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="30" result="effect1_foregroundBlur_23_2" />
             </filter>
-            <filter id="filter2_f_23_2" x="673" y="-50" width="270" height="908" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter2_f_23_2" x="673" y="-50" width="270" height="908" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_23_2" />
             </filter>
-            <filter id="filter3_f_23_2" x="-135" y="-50" width="270" height="908" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-                <feFlood flood-opacity="0" result="BackgroundImageFix" />
+            <filter id="filter3_f_23_2" x="-135" y="-50" width="270" height="908" filterUnits="userSpaceOnUse" colorInterpolationFilters="sRGB">
+                <feFlood floodOpacity="0" result="BackgroundImageFix" />
                 <feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape" />
                 <feGaussianBlur stdDeviation="25" result="effect1_foregroundBlur_23_2" />
             </filter>
@@ -103,7 +105,7 @@ export default function CreonPass() {
                 </div>
             </div>
             <div className="hidden lg:block relative size-[808px] items-center justify-center">
-                <Video fileName='nft-video-mQvVrZPzmeS5MnLrOI2IYmtUp6jbQg' autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md' />
+                <Video fileName={VIDEO_ID} autoPlay playsInline loop muted className='w-full h-full object-cover rounded-md' />
                 <div className="min-w-full md:min-h-screen absolute top-0 z-10 bg-gradient-to-t from-blue/[44%] from-0% to-purple to-100% mix-blend-soft-light"></div>
                 <Ellipse className="z-10 absolute top-0 w-full aspect-[1/2]" />
             </div>

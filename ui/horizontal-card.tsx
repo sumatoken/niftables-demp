@@ -1,5 +1,4 @@
 import React from 'react'
-import Badge from './badge'
 import Text from './text'
 import Image from 'next/image'
 import { cn } from '@shared/utils/cn'

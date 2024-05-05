@@ -1,5 +1,3 @@
-'use client'
-
 import React from 'react'
 import HexLg from './icons/hex-lg.svg';
 import HexMd from './icons/hex-md.svg';

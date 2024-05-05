@@ -1,7 +1,5 @@
-import Separator from '@ui/separator'
 import Text from '@ui/text'
 import Video from '@ui/video'
-import Image from 'next/image'
 import React from 'react'
 
 export default function Profiting() {

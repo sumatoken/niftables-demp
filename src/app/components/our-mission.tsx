@@ -16,7 +16,7 @@ export default function OurMission() {
                     </Text>
                 </div>
                 <div className="hidden md:block md:relative w-[836px] min-h-[502px] md:ml-0 2xl:ml-[119px]">
-                    <Image src='/cron.png' width={836} height={502} quality={100} alt='hero video' className='w-[836px] min-h-[502px] absolute md:inline top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2' />
+                    <Image src='/cron.png' width={836} height={502} quality={100} alt='NIFTABLES STONE LOGO' className='w-[836px] min-h-[502px] absolute md:inline top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2' />
 
                     <div className="absolute left-0 w-[282px] h-[502px] bg-gradient-to-r from-black from-0% to-black/0 to-100%">
                     </div>

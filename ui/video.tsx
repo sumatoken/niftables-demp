@@ -12,9 +12,10 @@ export default async function Video({ fileName, className, ...props }: Props) {
     const { url } = blobs[0]
 
     return (
-        <video className={className} {...props} preload="none" aria-label="Video player">
-            <source src={url} type="video/mp4" />
-            Your browser does not support the video tag.
-        </video>
+        <p>dd</p>
+        // <video className={className} {...props} preload="none" aria-label="Video player">
+        //     <source src={url} type="video/mp4" />
+        //     Your browser does not support the video tag.
+        // </video>
     )
 }

@@ -1,13 +1,14 @@
 import Separator from '@ui/separator'
 import Text from '@ui/text'
 import Video from '@ui/video'
-import Image from 'next/image'
 import React from 'react'
+
+const VIDEO_ID = 'main-background-video-VvVCsw6hCfREJqkL2DYkyZ8HPCC3nT'
 
 export default function Hero() {
     return (
         <section className='relative min-w-full min-h-screen'>
-            <Video fileName='main-background-video-VvVCsw6hCfREJqkL2DYkyZ8HPCC3nT' autoPlay playsInline loop muted className='aspect-square md:aspect-auto  max-w-full h-[100vh] md:w-full md:h-full object-cover' />
+            <Video fileName={VIDEO_ID} autoPlay playsInline loop muted className='aspect-square md:aspect-auto  max-w-full h-[100vh] md:w-full md:h-full object-cover' />
 
             <div className="min-w-full min-h-screen absolute top-0 z-10 bg-gradient-to-t from-black from-0% via-blue via-50% to-purple to-100% mix-blend-soft-light"></div>
             <div className="z-10 absolute bottom-[102px] md:bottom-[102px] sm:bottom-[50px] flex flex-col px-5 md:px-[50px] lg:px-[100px] xl:px-[240px] gap-[30px]">
