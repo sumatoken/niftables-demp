@@ -113,6 +113,26 @@ const MobileMenu = () => {
     )
 }
 
+const ScrollIndicator = () => {
+    const [scrollPosition, setScrollPosition] = useState(0);
+    useEffect(() => {
+        const updateScrollPosition = () => {
+            const totalHeight = document.body.scrollHeight - window.innerHeight;
+            const scrollPosition = (window.scrollY / totalHeight) * 100;
+            setScrollPosition(scrollPosition);
+        };
+
+        window.addEventListener('scroll', updateScrollPosition);
+        return () => window.removeEventListener('scroll', updateScrollPosition);
+    }, []);
+
+
+
+    return (<div className={cn('fixed right-0 bg-purple w-[5px] h-[65px]')} style={{
+        top: `${scrollPosition}%`,
+    }} />)
+}
+
 export default function Header() {
     const [isTop, setIsTop] = useState(true);
 
@@ -129,6 +149,7 @@ export default function Header() {
 
     return (
         <header className="absolute top-0 z-50 w-full">
+            <ScrollIndicator />
             <nav className={cn('hidden md:flex md:fixed md:top-0 w-full items-center justify-between px-[50px] py-[30px]', isTop ? '' : 'backdrop-blur bg-gradient-to-t from-transparent to-purple/20')}>
                 <Link href='#'>
                     <Logo />
